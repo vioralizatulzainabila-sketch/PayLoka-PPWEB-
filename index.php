@@ -29,6 +29,10 @@ include 'includes/data.php';
       <p class="baris"><span>Subtotal</span><span id="subtotal">Rp0</span></p>
       <p class="baris"><span>Diskon 10%</span><span id="diskon">Rp0</span></p>
       <p class="baris total"><span>Total</span><span id="total">Rp0</span></p>
+      <label for="bayar">Uang dibayar</label>
+      <input type="number" id="bayar" min="0" placeholder="0">
+      <p id="pesan"></p>
+      <button type="button" id="tombol-bayar" class="tombol-bayar" disabled>Bayar</button>
     </aside>
   </div>
 </main>
