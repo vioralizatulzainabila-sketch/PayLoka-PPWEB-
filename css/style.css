@@ -16,3 +16,41 @@ body {
 h1, h2, h3 {
   font-family: 'Bricolage Grotesque', sans-serif;
 }
+
+.wadah {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+
+.daftar-produk {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 16px;
+}
+
+.kartu {
+  background: #fff;
+  border: 1px solid rgba(18, 48, 43, 0.12);
+  border-radius: 14px;
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(18, 48, 43, 0.06);
+}
+
+.kartu .nama {
+  margin: 0 0 6px;
+  font-size: 18px;
+}
+
+.kartu .harga {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--hijau);
+}
+
+.kartu .stok {
+  margin: 6px 0 0;
+  font-size: 14px;
+  color: #5E7571;
+}
