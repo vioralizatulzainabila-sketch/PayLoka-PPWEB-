@@ -125,3 +125,48 @@ h1, h2, h3 {
 .baris.total span:last-child {
   color: var(--hijau);
 }
+
+.ringkasan label {
+  display: block;
+  margin-top: 16px;
+  font-weight: 600;
+}
+
+#bayar {
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 6px;
+  padding: 10px 12px;
+  font-size: 18px;
+  border: 1px solid rgba(18, 48, 43, 0.2);
+  border-radius: 10px;
+  background: var(--krem);
+  color: var(--teks);
+}
+
+#pesan {
+  min-height: 22px;
+  margin: 8px 0;
+  font-weight: 500;
+}
+
+#pesan.kurang { color: var(--koral); }
+#pesan.cukup { color: var(--hijau); }
+
+.tombol-bayar {
+  width: 100%;
+  padding: 14px;
+  border: 0;
+  border-radius: 12px;
+  background: var(--kuning);
+  color: var(--teks);
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.tombol-bayar:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
