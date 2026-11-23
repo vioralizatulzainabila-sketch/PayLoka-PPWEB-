@@ -54,3 +54,74 @@ h1, h2, h3 {
   font-size: 14px;
   color: #5E7571;
 }
+
+.kasir {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+@media (min-width: 800px) {
+  .kasir {
+    grid-template-columns: 2fr 1fr;
+    align-items: start;
+  }
+}
+
+.qty {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.qty button {
+  width: 36px;
+  height: 36px;
+  border: 1px solid rgba(18, 48, 43, 0.2);
+  border-radius: 8px;
+  background: var(--krem);
+  color: var(--teks);
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.qty button:hover {
+  background: var(--kuning);
+}
+
+.qty .jumlah {
+  min-width: 24px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.ringkasan {
+  background: #fff;
+  border: 1px solid rgba(18, 48, 43, 0.12);
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(18, 48, 43, 0.06);
+}
+
+.ringkasan h2 {
+  margin-top: 0;
+}
+
+.baris {
+  display: flex;
+  justify-content: space-between;
+  margin: 8px 0;
+}
+
+.baris.total {
+  border-top: 2px dashed rgba(18, 48, 43, 0.2);
+  padding-top: 12px;
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.baris.total span:last-child {
+  color: var(--hijau);
+}
