@@ -1,0 +1,18 @@
+:root {
+  --hijau: #0E6B5C;
+  --kuning: #F2B632;
+  --krem: #FFF8E7;
+  --teks: #12302B;
+  --koral: #E8623F;
+}
+
+body {
+  margin: 0;
+  background: var(--krem);
+  color: var(--teks);
+  font-family: 'Figtree', sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: 'Bricolage Grotesque', sans-serif;
+}
